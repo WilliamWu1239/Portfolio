@@ -29,6 +29,21 @@ export const data = {
       ],
     },
     {
+      title: "REI Opportunity Finder",
+      subtitle: "Real Estate Investment Analysis Tool",
+      tags: ["TypeScript", "Next.js", "Prisma", "SQLite", "Playwright", "Tailwind CSS"],
+      links: {
+        code: "https://github.com/WilliamWu1239/Real-Estate-Finder",
+        demo: null,
+      },
+      bullets: [
+        "Built a full-stack real estate investment tool that scrapes active listings from Redfin and Zillow using headless browser automation with stealth detection bypass.",
+        "Implemented a property scoring algorithm (0–100) based on days on market, price reductions, motivation keywords, and comparable sales data to surface high-potential deals.",
+        "Estimated property values using weighted-median analysis of recently sold comparable properties with Haversine distance calculations for proximity filtering.",
+        "Added offer-range suggestions, customized seller outreach email generation, and a pipeline tracker to manage deals from discovery through contract negotiation.",
+      ],
+    },
+    {
       title: "Multi-Label Weather Condition Predictor",
       subtitle: "",
       tags: ["Python", "TensorFlow", "Pandas", "scikit-learn"],
