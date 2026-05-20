@@ -3,6 +3,8 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect } from "react";
 
+const resumePath = `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/resume.pdf`;
+
 export default function ResumeModal({ onClose }: { onClose: () => void }) {
   // Close on Escape key
   useEffect(() => {
@@ -41,7 +43,7 @@ export default function ResumeModal({ onClose }: { onClose: () => void }) {
             <span className="text-sm font-medium text-slate-300">Resume — William Wu</span>
             <div className="flex items-center gap-3">
               <a
-                href="/resume.pdf"
+                href={resumePath}
                 download="William_Wu_Resume.pdf"
                 className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-md border border-slate-700 text-slate-400 hover:border-violet-500 hover:text-violet-300 transition-colors duration-200"
               >
@@ -51,7 +53,7 @@ export default function ResumeModal({ onClose }: { onClose: () => void }) {
                 Download
               </a>
               <a
-                href="/resume.pdf"
+                href={resumePath}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-md border border-slate-700 text-slate-400 hover:border-violet-500 hover:text-violet-300 transition-colors duration-200"
@@ -75,7 +77,7 @@ export default function ResumeModal({ onClose }: { onClose: () => void }) {
 
           {/* PDF viewer */}
           <iframe
-            src="/resume.pdf"
+            src={resumePath}
             className="flex-1 w-full"
             title="William Wu Resume"
           />
